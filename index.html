@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Institution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header, nav, main, footer {
+            padding: 1rem;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            max-width: 100px;
+            height: auto;
+        }
+
+        nav {
+            background-color: #444;
+        }
+
+        .menu {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 1rem 0;
+        }
+
+        .menu li {
+            margin: 0 1rem;
+            position: relative;
+        }
+
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .menu a:hover {
+            color: #ff9900;
+        }
+
+        .submenu-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #444;
+        }
+
+        .submenu:hover .submenu-content {
+            display: block;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #444;
+            color: #fff;
+        }
+
+        .social-links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        @media screen and (max-width: 768px) {
+            header {
+                flex-direction: column;
+            }
+
+            .logo {
+                margin-bottom: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src=" " alt="Institution Logo">
+        </div>
+        <h1>Institution Name</h1>
+        <p>Affiliation</p>
+        <p>Address</p>
+    </header>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li class="submenu">
+                <a href="#">Departments</a>
+                <ul class="submenu-content">
+                    <li><a href="#">Department of CSE</a></li>
+                    <li><a href="#">Department of ISE</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        ABOUT COLLEGE
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+        <p>&copy; 2023 Your Institution. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
